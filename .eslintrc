@@ -1,0 +1,16 @@
+{
+    "parserOptions": {
+        "ecmaVersion": 6
+    },
+
+    "env": {
+        "es6": true,
+        "amd": false,
+        "node": false,
+        "browser": true,
+        "serviceworker": false
+    },
+    "rules": {
+        "no-console": "off"
+    }
+  }

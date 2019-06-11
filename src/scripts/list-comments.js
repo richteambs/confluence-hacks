@@ -7,14 +7,8 @@
         jQuery.ajax({
             url: url,
             success: function(response) {
-                jQuery(response.results).each(function() {
-                    if (this.hasOwnProperty("extensions") &&
-                        this.extensions.location === "inline" &&
-                        this.extensions.resolution.status === "open") {
-                        // TODO: process comment
-                        callback && callback(this);
-                        console.log(AJS.params.baseUrl + this._links.webui);
-                    }
+                jQuery(response.results).each(function() {                    
+                    callback(this);
                 });
                 if ( !(response.size < response.limit) ) {
                     getComments(start + limit, callback);
@@ -23,13 +17,15 @@
         });
     }
 
-    getComments(0, function(comment) {
+    function processComment(comment) {
         if (!(comment.hasOwnProperty("extensions") &&
             comment.extensions.location === "inline" &&
             comment.extensions.resolution.status === "open")) {
             return;
         }
         console.log(`Comment ${comment.id}`);
-    });
+    }
+
+    getComments(0, processComment);
     
 })();

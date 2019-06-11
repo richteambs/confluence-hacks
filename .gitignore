@@ -59,3 +59,7 @@ typings/
 
 # next.js build output
 .next
+
+# Intermediate and output directories
+_build/
+dist/

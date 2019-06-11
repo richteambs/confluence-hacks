@@ -1,0 +1,32 @@
+{
+  "name": "confluence-hacks",
+  "version": "0.0.3",
+  "description": "Rich's Confluence Hacks",
+  "main": "index.js",
+  "scripts": {
+    "test": "gulp test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/richteambs/confluence-hacks.git"
+  },
+  "keywords": [
+    "confluence"
+  ],
+  "author": "Rich Tebb",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/richteambs/confluence-hacks/issues"
+  },
+  "homepage": "https://github.com/richteambs/confluence-hacks#readme",
+  "devDependencies": {
+    "del": "^4.1.1",
+    "fancy-log": "^1.3.3",
+    "gulp": "^4.0.2",
+    "gulp-eslint": "^5.0.0",
+    "gulp-plumber": "^1.2.1",
+    "gulp-rename": "^1.4.0",
+    "gulp-sourcemaps": "^2.6.5",
+    "gulp-terser": "^1.2.0"
+  }
+}
