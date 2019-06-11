@@ -2,7 +2,7 @@
 
     function getComments(start, callback) {
         const limit = 20;
-        let url = `${contextPath}/rest/api/content/${context.context.contentId}/child/comment?expand=extensions.resolution%2Cextensions.inline%2Cbody.view%2Chistory&start=${start},limit=${limit}`;
+        let url = `${contextPath}/rest/api/content/${context.context.contentId}/child/comment?expand=extensions.resolution%2Cextensions.inline%2Cbody.view%2Chistory&start=${start}&limit=${limit}`;
         
         jQuery.ajax({
             url: url,

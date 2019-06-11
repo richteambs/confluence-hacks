@@ -1,1 +1,1 @@
-javascript:(function(){s=document.createElement('script');s.type='text/javascript';s.src='https://raw.github.com/richteambs/confluence-hacks/master/src/list-comments.js';document.body.appendChild(s);})();
+javascript:(function(){s=document.createElement('script');s.type='text/javascript';s.src='https://cdn.jsdelivr.net/gh/richteambs/confluence-hacks@0.0.2/src/list-comments.js';document.body.appendChild(s);})();
